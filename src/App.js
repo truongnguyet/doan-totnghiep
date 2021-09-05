@@ -14,6 +14,7 @@ function App() {
             if (user) {
                 setGlobal({user})
             } else {
+                setGlobal({user: null})
                 history.push("/signin")
             }
         });

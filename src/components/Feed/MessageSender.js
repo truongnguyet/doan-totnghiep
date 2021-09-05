@@ -14,16 +14,13 @@ function MessageSender(props) {
     return (
         <div className={'messageSender'}>
             <div className="messageSender_top">
-                <Avatar/>
+                <Avatar src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/149152170_2964676293817456_7684703501999024230_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=kUzibKagpwsAX-J5F31&_nc_ht=scontent.fhan2-3.fna&oh=1c3495047e0ad74a36847ed014e23a90&oe=615911FA" alt={''}/>
                 <form>
                     <input value={input}
                            onChange={e => setInput(e.target.value)}
                            type={'text'}
                            placeholder={'Hôm nay bạn thế nào?'}
                            className={'messageSender_input'}/>
-                    <input value={imageUrl}
-                           onChange={e => setImageUrl(e.target.value)}
-                           type={'text'} placeholder={'image URL '}/>
                     <button onClick={handleSubmit} type={'submit'}>
                         Hidden submit
                     </button>
